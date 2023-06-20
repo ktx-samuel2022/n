@@ -1,0 +1,21 @@
+.title{
+    border-radius: 10px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+span{
+    font-size: 32px;
+}
+body{
+    background-image: linear-gradient(rgb(0, 247, 255),rgb(0, 68, 128),rgb(89, 235, 230),rgb(0, 68, 128),rgb(0, 247, 255));
+    height: 1000px;
+    color:black
+}
+p{
+    font-size: 22px;
+}
+#webcam,#foto{
+    width:350px ;
+    height:300px ;
+    border: dashed 2px black;
+}

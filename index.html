@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--LINK DO ML5-->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+
+    <!--LINK DO BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--LINK DO STYLE.CSS-->
+    <link rel="stylesheet" href="style.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis De Mãos</title>
+</head>
+<body>
+   <div class="container">
+    <center>
+        <h1 class="btn btn-primary title">APP MÃOS COM EMOJIS
+            <br>
+        <span>&#9995;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+    </h1>
+    <br><br>
+    <h3></h3>Faça os seguintes gestos para gerar os Emojis:
+    <span>&#9995;</span>
+    <span>&#128077;</span>
+    <span>&#9996;</span></p>
+<div class="col-lg-4 col-md-4-sm-4">
+<label>Visualização da Webcam</label>
+<div id="webcam"></div><br>
+<button onclick="TirarFoto()"class="btn btn-primary">Tirar Foto</button>
+</div>
+<div class="col-lg-4 col-md-4-sm-4">
+    <label>Previsão 1:</label><br>
+    <p id="mão1"></p>
+    <p id="emoji1"></p>
+    <label>Previsão 2:</label>
+    <p id="mão2"></p>
+    <p id="emoji2"></p>
+</div>
+<div class="col-lg-4 col-md-4-sm-4">
+    <label>Sua Foto</label>
+    <div id="foto"></div><br>
+    <button onclick="classificar()"class="btn btn-success">Indentificar Mão</button>
+</div>
+
+    </center>
+   </div>
+<script src="main.js"></script>
+</body>
+</html>
